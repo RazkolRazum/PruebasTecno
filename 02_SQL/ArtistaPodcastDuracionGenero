@@ -1,0 +1,3 @@
+SELECT ar.name as 'Artista', podcasts.id as 'Podcast', podcasts.duration as 'Duración',podcasts.gender as 'Genero' 
+FROM `podcasts`
+INNER JOIN artists as ar on podcasts.artist_id=ar.id

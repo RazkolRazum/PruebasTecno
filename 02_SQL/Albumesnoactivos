@@ -1,0 +1,4 @@
+SELECT ar.name as 'Artista', albums.name as 'Albumes', albums.release_date as 'Fecha de lanzamiento', albums.gender as 'Genero'
+FROM `albums`
+inner JOIN artists as ar ON ar.id=albums.id
+where ar.bitactivo=1
